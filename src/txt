@@ -1,0 +1,13 @@
+ <!-- Quiz Card -->
+    <div class="card">
+      <h3>Sorting</h3>
+      <p>📄 5 Questions · ⏱️ 1 min</p>
+      <p class="difficulty">Difficulty: easy</p>
+      <p class="status">✔ Published</p>
+
+      <!-- Buttons -->
+      <div class="btn-group">
+        <button class="delete">Delete</button>
+        <button class="view">View</button>
+      </div>
+    </div>
