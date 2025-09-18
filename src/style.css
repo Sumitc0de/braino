@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 10vh;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#signup {
+  border-radius: 100px;
+  padding: 10px 20px;
+  background-image: radial-gradient(circle at 20% 20%, #7f5af0 0%, #2cb8f9 90%);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+#signup:hover {
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.hero .subtitle {
+  color: #a7a9be;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero .title {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero .title span {
+  background: linear-gradient(90deg, #7f5af0, #2cb8f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .desc {
+  font-size: 1rem;
+  color: #d1d1d1;
+}
+
+.hero .cta {
+  margin-top: 10px;
+  padding: 12px 30px;
+  border-radius: 100px;
+  background-image: linear-gradient(90deg, #7f5af0, #2cb8f9);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+.hero .cta:hover {
+  transform: scale(1.05);
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+ letter-spacing: 1px;
+}
+
+.logo .brain {
+  color: #ffffff; /* Clean white */
+  font-weight: 800;
+}
+
+.logo .burst {
+  color: #7f5af0; /* Purple highlight */
+  font-weight: 800;
+}
+
+.logo .ai {
+  background: linear-gradient(90deg, #7f5af0, #2cb8f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
