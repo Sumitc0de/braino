@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBurst AI Dashboard</title>
+    <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div>
+                <div class="logo">
+                    Brain<span>Burst</span> <br> AI
+                </div>
+
+                <button class="menu-btn create-btn">Create Quiz</button>
+                <p style="margin: 12px 0; font-size: 0.85rem; color: #6b7280;">
+                    Start creating your custom quizzes with ease.
+                </p>
+
+                <button class="menu-btn">Learn</button>
+                <button class="menu-btn">Explore Quizzes</button>
+                <button class="menu-btn">My Quizzes</button>
+
+                <button class="logout" id="logoutBtn">Logout</button>
+            </div>
+
+            <div class="footer">
+                © 2025 BrainBurst AI. All rights reserved.
+            </div>
+        </div>
+
+        <main class="content-area">
+            <div class="quiz-form-card">
+                <h2 class="form-title">
+                    <span class="emoji">🎯</span> Create Your Quiz
+                </h2>
+                
+                <form id="createQuizForm">
+                    <div class="form-group">
+                        <div class="input-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <input type="text" class="input-field" name="quizTitle" value="HTML" placeholder="Quiz Title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <input type="number" class="input-field" name="numQuestions" value="5" placeholder="Number of Questions (e.g., 10)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <input type="number" class="input-field" name="quizTimer" value="1" placeholder="Timer (1s)" required>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <select class="select-field" name="difficultyLevel" required>
+                            <option value="">Select Difficulty Level</option>
+                            <option value="easy" selected>Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="create-quiz-button">
+                        <span class="emoji">🚀</span> Create Quiz
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="./javascript/quiz.js"></script>
+</body>
+</html>

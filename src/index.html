@@ -2,78 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrainBurst AI Dashboard</title>
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainBurst AI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div>
-                <!-- Logo -->
-                <div class="logo">
-                    Brain<span>Burst</span> <br> AI
-                </div>
+  <div class="main-container">
+    <!-- Header -->
+    <div class="header">
+      <h1 class="logo">
+  <span class="brain">Brain</span>
+  <span class="burst">Burst</span>
+  <span class="ai">AI</span>
+</h1>
 
-                <!-- Buttons -->
-                <button class="menu-btn create-btn">Create Quiz</button>
-                <p style="margin: 12px 0; font-size: 0.85rem; color: #6b7280;">
-                    Start creating your custom quizzes with ease.
-                </p>
-
-                <button class="menu-btn">Learn</button>
-                <button class="menu-btn">Explore Quizzes</button>
-                <button class="menu-btn">My Quizzes</button>
-
-                <button class="logout">Logout</button>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                © 2025 BrainBurst AI. All rights reserved.
-            </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Welcome -->
-            <h1 class="welcome">Welcome back, <span>Sumit Vishwakarma</span> 👋</h1>
-
-            <!-- Create Quiz -->
-            <button class="create-quiz">+ Create Quiz</button>
-
-            <!-- Quiz Cards -->
-            <div class="card-container">
-                <div class="card">
-                    <h3>Sorting</h3>
-                    <p>📄 5 Questions · ⏱️ 1 min</p>
-                    <p class="difficulty">Difficulty: easy</p>
-                    <p class="status">✔ Published</p>
-                    <div class="btn-group">
-                        <button class="delete">Delete</button>
-                        <button class="view">View</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Sorting</h3>
-                    <p>📄 5 Questions · ⏱️ 1 min</p>
-                    <p class="difficulty">Difficulty: easy</p>
-                    <p class="status">✔ Published</p>
-                    <div class="btn-group">
-                        <button class="delete">Delete</button>
-                        <button class="view">View</button>
-                    </div>
-                </div>
-             
-            </div>
-
-
-
-        </div>
+      <button id="signup">Take the Quiz</button>
     </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h3 class="subtitle">AI Adaptive Quiz</h3>
+      <h1 class="title">Discover Your<br><span>Learning Style</span> Today!</h1>
+      <p class="desc">#1 Adaptive Quiz Powered by BrainBurst AI</p>
+      <button class="cta" id="login">Start Quiz</button>
+    </div>
+  </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>

@@ -11,3 +11,51 @@
         <button class="view">View</button>
       </div>
     </div>
+
+
+     <main class="content-area">
+
+            <div class="quiz-form-card">
+                <h2 class="form-title">
+                    <span class="emoji">🎯</span> Create Your Quiz
+                </h2>
+                
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <input type="text" class="input-field" placeholder="Quiz Title">
+                </div>
+
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <input type="number" class="input-field" placeholder="Number of Questions (e.g., 10)">
+                </div>
+
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <input type="text" class="input-field" placeholder="1">
+                </div>
+
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <select class="select-field">
+                        <option value="">Select Difficulty Level</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+
+                <button class="create-quiz-button">
+                    <span class="emoji">🚀</span> Create Quiz
+                </button>
+            </div>
+
+        </main>
